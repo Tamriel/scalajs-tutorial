@@ -15,3 +15,5 @@ jsDependencies += RuntimeDOM
 // uTest settings
 libraryDependencies += "com.lihaoyi" %%% "utest" % "0.4.4" % "test"
 testFrameworks += new TestFramework("utest.runner.Framework")
+
+persistLauncher := true
