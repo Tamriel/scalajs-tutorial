@@ -3,10 +3,12 @@ package tutorial.webapp
 import scala.scalajs.js.JSApp
 
 import org.scalajs.jquery.jQuery
+import com.scalawarrior.scalajs.ace._
 
 object TutorialApp extends JSApp {
   def main(): Unit = {
     jQuery(setupUI _)
+    val editor = ace.edit("editor")
   }
 
   def setupUI(): Unit = {

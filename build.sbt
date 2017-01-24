@@ -17,3 +17,7 @@ libraryDependencies += "com.lihaoyi" %%% "utest" % "0.4.4" % "test"
 testFrameworks += new TestFramework("utest.runner.Framework")
 
 persistLauncher := true
+
+resolvers += "amateras-repo" at "http://amateras.sourceforge.jp/mvn/"
+
+libraryDependencies += "com.scalawarrior" %%% "scalajs-ace" % "0.0.4"
