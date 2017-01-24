@@ -17,3 +17,8 @@ libraryDependencies += "com.lihaoyi" %%% "utest" % "0.4.4" % "test"
 testFrameworks += new TestFramework("utest.runner.Framework")
 
 persistLauncher := true
+
+libraryDependencies ++= Seq(
+  "eu.timepit" %% "crjdt-core"  % "0.0.6",
+  "eu.timepit" %% "crjdt-circe" % "0.0.6" // optional
+)

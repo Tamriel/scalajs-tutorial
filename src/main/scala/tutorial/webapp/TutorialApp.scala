@@ -3,10 +3,12 @@ package tutorial.webapp
 import scala.scalajs.js.JSApp
 
 import org.scalajs.jquery.jQuery
+import eu.timepit.crjdt.core.Replica
 
 object TutorialApp extends JSApp {
   def main(): Unit = {
     jQuery(setupUI _)
+    val p0 = Replica.empty("p")
   }
 
   def setupUI(): Unit = {
